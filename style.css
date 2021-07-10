@@ -5,43 +5,14 @@
     padding: 10px;
 }
 
-/* .content video {
-    margin-top: 80px;
-    border-radius: 10px;
-} */
-
 .icons {
     position: relative;
-    margin-top:-125px;
+    margin-top:-145px;
     text-align: center;
     margin-left: 170px;
 }
 
-.setting {
-    position: relative;    
-    margin-top:-430px;
-    margin-left: 572px;
-    background-color:rgb(128,128,128, 0.5);
-    font-size: 20px;
-    border-radius:50%;
-    width: 20px;
-    height: 20px;
-    padding: 20px;
-    color: white;
-}
 
-.cross {
-    position: relative;   
-    color: white;
-    margin-left: 630px;
-    margin-top:-100px;
-    background-color:rgba(128,128,128, 0.3);
-    font-size: 11px;
-    border-radius:50%;
-    width: 10px;
-    height: 10px;
-    padding: 15px;
-}
 
 .first-section {
     margin-top: 50px;
@@ -52,6 +23,8 @@
 }
 
 .delete {
+    position: absolute;
+    margin-left: -110px;
     color: gray;
     font-size: 20px;
     background-color:rgb(128,128,128, 0.5);
@@ -62,17 +35,35 @@
 }
 
 .record {
-    margin-top: 10px;
+    position: absolute;
+    margin-left: -40px;
+    margin-top: -10px;
     color: red;
-    font-size: 30px;
-    background-color:rgb(128,128,128, 0.5);
+    font-size: 60px;
+    /* background-color:rgb(128,128,128, 0.5); */
+    /* border: 20px; */
+    border: solid white;
     border-radius:50%;
-    width: 30px;
-    height: 30px;
-    padding: 20px;
+    padding: 3px;
+}
+
+.record-pause {
+    position: absolute;
+    margin-left: -45px;
+    margin-top: -10px;
+    color: white;
+    font-size: 60px;
+    background-color:rgb(128,128,128, 0.2);
+    /* border: 20px; */
+    border-radius:50%;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
 }
 
 .send {
+    position: absolute;
+    margin-left: 42px;
     color: gray;
     font-size: 20px;
     background-color:rgb(128,128,128, 0.5);
@@ -82,10 +73,13 @@
     padding: 20px;
 }
 
+
+/* Second Section  */
+/* Second Section  */
 /* Second Section  */
 
 .second-section {
-    margin-top: 500px;
+    margin-top: 200px;
 }
 
 .time {
@@ -95,9 +89,9 @@
     margin-left: 120px;
 }
 
-.icons2 {
+/* .icons2 {
     margin-top:-430px
-}
+} */
 
 .second-section video{
     border-radius: 20px;
@@ -106,7 +100,7 @@
 /* Third Section  */
 
 .third-section {
-    margin-top:500px;
+    margin-top:200px;
 }
 
 .third-section video{
@@ -123,6 +117,32 @@
 
 h2 {
     text-align: center
+}
+
+.setting {
+    position: absolute;    
+    margin-top:-330px;
+    margin-left: 601px;
+    background-color:rgb(128,128,128, 0.2);
+    font-size: 15px;
+    border-radius:50%;
+    width: 15px;
+    height: 15px;
+    padding: 8px;
+    color: gray;
+}
+
+.cross {
+    position: absolute;   
+    color: white;
+    margin-left: 630px;
+    margin-top:-360px;
+    background-color:rgba(128,128,128, 0.3);
+    font-size: 10px;
+    border-radius:50%;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
 }
 
 
