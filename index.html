@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <style>
+      #second-cross {
+        margin-top:-377px; 
+        margin-left:635px
+      }
+      #second-cross:hover {
+        margin-top:-379px; 
+        margin-left:634px
+      }
+    </style>
 </head>
 <body class="container">
     <div class="first-section">
@@ -23,6 +33,7 @@
               <img src="/media/send.png" alt=""> -->
               <i class="far fa-trash-alt delete"></i>
               <a href="#"><i class="fas fa-circle record"></i></a>
+              <!-- <i id="drop" class="fas fa-circle record"></i> -->
               
               <!-- <i class="fas fa-record-vinyl record"></i> -->
               <i class="far fa-paper-plane send"></i>
@@ -42,19 +53,19 @@
             Your browser does not support the video tag.
           </video>
           <div class="icons">
-            <div style="display:flex" class="time">
+            <div style="display:flex" class="time">              
                 <i style="color:red; margin-top: 17px; margin-right:5px" class="fas fa-circle"></i>
                 <p>00:04:27</p>
             </div>
               <i class="far fa-trash-alt delete"></i>
               <!-- <i class="fas fa-record-vinyl record"></i> -->
-              <i class="fas fa-pause-circle record-pause"></i>
+              <a href="#"><i class="fas fa-pause-circle record-pause"></i></a>
               <i class="far fa-paper-plane send"></i>
           </div>
           <div style="margin-top:-347px" class="setting">
             <i class="fas fa-cog"></i>
           </div>
-          <div style="margin-top:-377px; margin-left:635px" class="cross">
+          <div id="second-cross" class="cross">
               <i class="fas fa-times"></i>
           </div>
     </div>
@@ -69,7 +80,8 @@
           </div>
           <div class="icons">
               <i style="color: white" class="far fa-trash-alt delete"></i>
-              <i class="fas fa-circle record"></i>
+              <a href="#"><i class="fas fa-circle record"></i></a>
+              <!-- <i class="fas fa-circle record"></i> -->
               <!-- <i class="fas fa-record-vinyl record"></i> -->
               <i style="color: white; background-color: rgb(17, 172, 233);" class="far fa-paper-plane send"></i>
           </div>
@@ -86,6 +98,8 @@
       icons.forEach(icon => {
         icon.addEventListener('click', function(e) {
 
+          e.preventDefault();
+
           // let x = e.clientX - e.target.offsetLeft;
           // let y = e.clientY - e.target.offsetTop;
 
@@ -96,7 +110,7 @@
 
           setTimeout(() => {
             ripples.remove()
-          },1000);
+          },200);
         })
       })
     </script>
