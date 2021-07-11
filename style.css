@@ -5,6 +5,7 @@
     padding: 10px;
 }
 
+
 .icons {
     position: relative;
     margin-top:-145px;
@@ -40,6 +41,7 @@
     margin-top: -10px;
     color: red;
     font-size: 60px;
+    overflow: hidden;
     /* background-color:rgb(128,128,128, 0.5); */
     /* border: 20px; */
     border: solid white;
@@ -143,6 +145,35 @@ h2 {
     width: 10px;
     height: 10px;
     padding: 10px;
+}
+
+
+span {
+    position:absolute;
+    background: rgba(184, 160, 160, 0.5);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+    margin-top: 25px;
+    margin-left: -5px;
+}
+
+
+@keyframes animate
+{
+    0%
+    {
+        width: 0px;
+        height: 0px;
+        opacity: 0.1px;
+    }
+    100%
+    {
+        width: 80px;
+        height: 80px;
+        opacity: 0px;
+    }
 }
 
 
